@@ -1,3 +1,4 @@
-import random
+from random import randint
 
-print(random.randint(1, 100))
+def random_number(x: int, y: int) -> int:
+    return randint(x, y) if x <= y else randint(y, x)
